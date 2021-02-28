@@ -32,10 +32,6 @@ namespace Linkedlist
             //Display the topmost node in queue
             return linkedList.head;
         }
-        public Node Dequeue()
-        {
-            //Delete the node from queue
-            return linkedList.Pop();
-        }
+       
     }
 }

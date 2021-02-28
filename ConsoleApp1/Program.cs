@@ -52,14 +52,7 @@ namespace Linkedlist
          
 
             
-            ///<summary>
-            ///TC4: Check denqueu operation queue
-            /// </summary>
-            queue.Dequeue();
-            queue.DisplayQueue();
            
-
-
 
 
         }
