@@ -26,41 +26,7 @@ namespace Linkedlist
             
             
 
-            ///<summary>
-            ///UC2: Delete the Node from the stcak
-            /// </summary>
-
-            stack.Pop();
-            stack.Pop();
-            stack.Pop();
-            stack.DisplayStack();
            
-            
-            ///<summary>
-            ///UC3: Check enqueue operation in queue
-            /// </summary>
-            Queue queue = new Queue();
-            Node nodeA = new Node(56);
-            Node nodeB = new Node(30);
-            Node nodeC = new Node(70);
-
-            queue.Enqueue(nodeA);
-            queue.Enqueue(nodeB);
-            queue.Enqueue(nodeC);
-            queue.DisplayQueue();
-            queue.Top();
-         
-
-            
-            ///<summary>
-            ///TC4: Check denqueu operation queue
-            /// </summary>
-            queue.Dequeue();
-            queue.DisplayQueue();
-           
-
-
-
 
         }
     }

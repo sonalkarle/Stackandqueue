@@ -33,10 +33,6 @@ namespace Linkedlist
             return linkedList.head;
         }
 
-        public Node Pop()
-        {
-            //Delete the node from stack
-            return linkedList.Pop();
-        }
+     
     }
 }
