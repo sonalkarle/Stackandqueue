@@ -11,7 +11,7 @@ namespace Linkedlist
             Console.WriteLine("Welcome to stack operation");
             ///<summary>
             ///UC1:Added node in the stack
-           /* /// </summary>
+            /// </summary>
             Stack stack = new Stack();
             Node node1 = new Node(70);
             Node node2 = new Node(30);
@@ -35,7 +35,7 @@ namespace Linkedlist
             stack.Pop();
             stack.DisplayStack();
            
-            */
+            
             ///<summary>
             ///UC3: Check enqueue operation in queue
             /// </summary>

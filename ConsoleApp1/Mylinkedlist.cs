@@ -6,6 +6,7 @@ namespace Linkedlist
 {
     public class LinkedList
     {
+        //Create node variables 
         public Node head;
         public Node tail;
 
@@ -18,6 +19,7 @@ namespace Linkedlist
 
         public void AddNode(Node node)
         {
+            //Check wheather the list is empty then creates node as head
             if (head == null && tail == null)
             {
                 head = node;
@@ -25,6 +27,7 @@ namespace Linkedlist
             }
             else
             {
+                //If node than add new node as head 
                 node.next = head;
                 head = node;
             }
@@ -35,6 +38,7 @@ namespace Linkedlist
 
         public void Display()
         {
+            //Put head in temp variable and check head is null or not
             Node temp = head;
             if (this.head == null)
             {
@@ -43,11 +47,13 @@ namespace Linkedlist
             }
             while (temp != null)
             {
+                //Check until head is null so display all the nodes in list
                 Console.Write(temp.data + " ");
                 if (temp.next != null)
                 {
                     Console.Write("->");
                 }
+                //change temp data for the  next Node
                 temp = temp.next;
             }
             Console.WriteLine();
@@ -57,22 +63,28 @@ namespace Linkedlist
        
         public Node Pop()
         {
+            //Put head in temp variable and check head is null or not
             Node temp = head;
             if (head != null)
             {
+                //Create new head for next position
                 head = head.next;
             }
-            return temp;
+            //Temp will return for next node
+             return temp;
         }
         public void AppendNode(Node node)
         {
+            //Check wheather queue is empty or not 
             if (head == null && tail == null)
             {
+                //If empty then created not put as head node
                 head = node;
                 tail = node;
             }
             else
             {
+                //Not empty then add new node after head node
                 tail.next = node;
                 tail = node;
             }
